@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SurakshaSakhi | Vault Security Setup</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e9638f",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211116",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .pin-input {
+            @apply w-12 h-14 text-center text-2xl font-bold border-2 border-[#e5dcdf] dark:border-[#3d2b30] rounded-xl focus:border-primary focus:ring-0 bg-transparent;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#171113] dark:text-white min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e5dcdf] dark:border-[#3d2b30] px-10 py-4 lg:px-40">
+<div class="flex items-center gap-4 text-[#171113] dark:text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-4xl">shield_with_heart</span>
+</div>
+<h2 class="text-[#171113] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] font-display">SurakshaSakhi</h2>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center rounded-full h-10 bg-[#f4f0f2] dark:bg-[#3d2b30] text-[#171113] dark:text-white px-4 gap-2 text-sm font-bold">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+<span>Help</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 px-4 md:px-10 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[800px] flex-1">
+<div class="flex flex-col gap-3 p-4 mb-4">
+<div class="flex gap-6 justify-between items-center">
+<p class="text-[#171113] dark:text-white text-base font-medium leading-normal">Security Setup</p>
+<p class="text-[#171113] dark:text-white text-sm font-normal leading-normal">Step 3 of 3</p>
+</div>
+<div class="rounded bg-[#e5dcdf] dark:bg-[#3d2b30] overflow-hidden">
+<div class="h-2 rounded bg-primary" style="width: 100%;"></div>
+</div>
+</div>
+<h1 class="text-[#171113] dark:text-white tracking-light text-[32px] md:text-[40px] font-bold leading-tight px-4 text-center pb-3 pt-6 font-display">
+                    Secure Your Evidence Vault
+                </h1>
+<p class="text-[#5c4a50] dark:text-[#cbbec2] text-lg font-normal leading-normal pb-8 pt-1 px-4 text-center max-w-[600px] mx-auto">
+                    Set a unique 6-digit PIN to lock your evidence. This PIN should be different from your phone's lock code for maximum safety.
+                </p>
+<div class="flex flex-col items-center gap-6 p-4">
+<div class="flex gap-3">
+<input class="pin-input" maxlength="1" placeholder="•" type="password"/>
+<input class="pin-input" maxlength="1" placeholder="•" type="password"/>
+<input class="pin-input" maxlength="1" placeholder="•" type="password"/>
+<input class="pin-input" maxlength="1" placeholder="•" type="password"/>
+<input class="pin-input" maxlength="1" placeholder="•" type="password"/>
+<input class="pin-input" maxlength="1" placeholder="•" type="password"/>
+</div>
+<p class="text-sm text-[#87646f] dark:text-[#cbbec2]">Confirm 6-digit PIN</p>
+</div>
+<div class="mt-8 px-4 flex flex-col gap-4">
+<div class="flex items-center justify-between p-6 rounded-2xl border-2 border-solid border-[#e5dcdf] dark:border-[#3d2b30] bg-white/50 dark:bg-white/5">
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">visibility_off</span>
+</div>
+<div>
+<p class="text-[#171113] dark:text-white text-lg font-semibold leading-tight">Hide vault icon</p>
+<p class="text-[#5c4a50] dark:text-[#cbbec2] text-sm mt-1">Access the vault only through a secret gesture or code.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-[#e5dcdf] dark:bg-[#3d2b30] peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<div class="mt-8 px-4 py-4 bg-primary/10 rounded-xl flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5">verified_user</span>
+<p class="text-sm text-[#171113] dark:text-white leading-relaxed">
+<strong>Double Protection:</strong> The Evidence Vault uses end-to-end encryption. Even if someone manages to unlock your phone, they will still need this separate PIN to see your stored evidence.
+                    </p>
+</div>
+<div class="mt-12 px-4 flex flex-col items-center gap-4">
+<button class="w-full md:w-auto md:min-w-[280px] h-14 bg-primary hover:bg-primary/90 text-white rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-transform active:scale-95 shadow-lg shadow-primary/20">
+<span>Finish Setup</span>
+<span class="material-symbols-outlined">task_alt</span>
+</button>
+<div class="flex items-center gap-2 text-[#87646f] dark:text-[#cbbec2] text-sm mt-2">
+<span class="material-symbols-outlined text-sm">enhanced_encryption</span>
+<p>Your vault data is locally encrypted and private.</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto py-8 text-center border-t border-[#e5dcdf] dark:border-[#3d2b30]">
+<p class="text-[#87646f] dark:text-[#cbbec2] text-sm">
+                © 2024 SurakshaSakhi. Your safety is our priority.
+            </p>
+</footer>
+</div>
+</div>
+
+</body></html>

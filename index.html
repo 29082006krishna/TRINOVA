@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SurakshaSakhi - Your Trusted Friend for Safety and Justice</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e9638f",
+                        "background-light": "#fdf8f9",
+                        "background-dark": "#211116",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#171113] dark:text-white transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex justify-center py-2 bg-white/80 backdrop-blur-md sticky top-0 z-50 dark:bg-background-dark/80 border-b border-[#f3e8eb] dark:border-[#3d2a30]">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap px-4 py-3">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-9 flex items-center justify-center bg-primary/10 rounded-full">
+<span class="material-symbols-outlined text-primary font-bold">favorite</span>
+</div>
+<h2 class="text-[#4a1524] dark:text-white text-xl font-bold leading-tight tracking-tight">SurakshaSakhi</h2>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<nav class="hidden md:flex items-center gap-7">
+<a class="text-[#5c4048] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="{{ url_for('about') }}">about</a>
+<a class="text-xs font-semibold text-[#87646f] hover:text-primary transition-colors" href="{{ url_for('security_setup_1') }}">Security Protocols</a>
+
+<a class="text-[#5c4048] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors border-l border-[#f3e8eb] dark:border-[#3d2a30] pl-7" href="{{ url_for('login') }}">Login</a>
+<a class="text-[#5c4048] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="{{ url_for('sign_up') }}">Sign In</a>
+</nav>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary text-white text-sm font-bold shadow-md hover:bg-primary/90 active:scale-95 transition-all">
+<span class="truncate">Quick Exit</span>
+</button>
+</div>
+</header>
+</div>
+</div>
+<div class="px-4 md:px-40 flex justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="@container">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[460px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-3xl items-center justify-center p-8 text-center relative overflow-hidden shadow-xl" style='background-image: linear-gradient(rgba(233, 99, 143, 0.9) 0%, rgba(74, 21, 36, 0.85) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmY_ok_DFX6LDKmoJbqtcJPY9JVsUzKHoGu09w4TmxAIYLtynwJzw3AGb5akuufzMWWRG1nezIjKI-eWpCuzt2hJYYcgDl_9IJrv_jX0f93pFFdZ8IOMqof6zXxab_AjJyNp_ZQ9t7Uqj7R1L6EJn40034q4jyzoGysKyc6cbf1qp09C2O3776sRu3FS4mTHeDPVYJ1dgTKXtAMDkx7hBLD4LpVjxWfgxMSM7_2du45fltV0qOMHQnEAOoJQn1178WHJTxhNFHes8");'>
+<div class="flex flex-col gap-5 max-w-2xl z-10">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl">
+                                    Welcome to SurakshaSakhi
+                                </h1>
+<p class="text-white/95 text-lg font-medium leading-relaxed @[480px]:text-2xl italic opacity-90">
+                                    Your Trusted Friend for Safety and Justice
+                                </p>
+<p class="text-white/80 text-base font-light leading-relaxed max-w-lg mx-auto">
+                                    A safe space for you to find support, legal guidance, and a path forward. We prioritize your anonymity and peace of mind above all else.
+                                </p>
+</div>
+<div class="flex gap-4 z-10">
+<button class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-white text-primary text-base font-bold shadow-xl hover:bg-[#fff0f5] transition-all transform hover:-translate-y-1">
+<span>Start Securely</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 md:px-40 flex justify-center pt-12 pb-4">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="text-center md:text-left px-4">
+<h2 class="text-[#4a1524] dark:text-white text-2xl md:text-3xl font-bold leading-tight">Ways to Reach Us Safely</h2>
+<p class="text-[#87646f] dark:text-gray-400 mt-2 max-w-xl">Every interaction with SurakshaSakhi is encrypted and private. Choose the method that feels most secure for your current situation.</p>
+</div>
+</div>
+</div>
+<div class="px-4 md:px-40 flex justify-center py-5 mb-16">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+<div class="flex flex-1 gap-4 rounded-2xl border border-[#f0e4e8] dark:border-[#3d2a30] bg-white dark:bg-background-dark/50 p-7 flex-col hover:border-primary hover:shadow-lg transition-all group cursor-pointer">
+<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all transform group-hover:rotate-3">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-[#4a1524] dark:text-white text-lg font-bold leading-tight"> Chatbot</h2>
+<p class="text-[#87646f] dark:text-gray-400 text-sm font-normal leading-relaxed">Chat discreetly with our automated friend. End-to-end encrypted and completely private.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-2xl border border-[#f0e4e8] dark:border-[#3d2a30] bg-white dark:bg-background-dark/50 p-7 flex-col hover:border-primary hover:shadow-lg transition-all group cursor-pointer">
+<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all transform group-hover:-rotate-3">
+<span class="material-symbols-outlined text-3xl">public</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-[#4a1524] dark:text-white text-lg font-bold leading-tight">Web Interface</h2>
+<p class="text-[#87646f] dark:text-gray-400 text-sm font-normal leading-relaxed">Access resources and legal aid through our secure web portal. Designed for discretion.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-2xl border border-[#f0e4e8] dark:border-[#3d2a30] bg-white dark:bg-background-dark/50 p-7 flex-col hover:border-primary hover:shadow-lg transition-all group cursor-pointer">
+<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all transform group-hover:rotate-3">
+<span class="material-symbols-outlined text-3xl">balance</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-[#4a1524] dark:text-white text-lg font-bold leading-tight">Legal Awareness Module</h2>
+<p class="text-[#87646f] dark:text-gray-400 text-sm font-normal leading-relaxed">Learn about your legal rights and protections under Indian law in simple language.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-2xl border-2 border-primary/30 dark:border-primary/20 bg-[#fffbfc] dark:bg-background-dark/50 p-7 flex-col hover:border-primary hover:shadow-xl transition-all group cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">No Internet Needed</div>
+<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all transform group-hover:-rotate-3">
+<span class="material-symbols-outlined text-3xl">call</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-[#4a1524] dark:text-white text-lg font-bold leading-tight">24/7 Toll-Free Support</h2>
+<p class="text-primary text-2xl font-black tracking-tight my-1">1800-123-4567</p>
+<p class="text-[#87646f] dark:text-gray-400 text-sm font-normal leading-relaxed">Specifically for users without internet access. This call is <span class="font-bold text-primary italic">completely free of charge</span>.</p>
+<div class="mt-2 flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest">
+<span class="size-1.5 rounded-full bg-primary animate-pulse"></span>
+                                Available Now
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="px-4 md:px-40 flex justify-center py-12 bg-white dark:bg-[#1a0d11] border-t border-[#f0e4e8] dark:border-none">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 text-center">
+<div class="flex justify-center mb-6">
+<div class="px-4 py-1 rounded-full bg-[#fceef2] text-primary text-[10px] font-bold tracking-widest uppercase">
+                        Privacy Safeguard Enabled
+                    </div>
+</div>
+<p class="text-sm text-[#87646f] dark:text-gray-400 max-w-lg mx-auto leading-relaxed">
+                    SurakshaSakhi is designed with discretion in mind. To an observer, this platform appears as a general support community. If you need to leave instantly, use the <strong>Quick Exit</strong> button above.
+                </p>
+<div class="mt-8 flex justify-center gap-8 border-t border-[#f0e4e8] pt-8">
+
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>

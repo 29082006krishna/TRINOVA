@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web Interface Support Details - SurakshaSakhi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e9638f",
+                        "background-light": "#fdf8f9",
+                        "background-dark": "#211116",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#171113] dark:text-white transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex justify-center py-2 bg-white/80 backdrop-blur-md sticky top-0 z-50 dark:bg-background-dark/80 border-b border-[#f3e8eb] dark:border-[#3d2a30]">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap px-4 py-3">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-9 flex items-center justify-center bg-primary/10 rounded-full">
+<span class="material-symbols-outlined text-primary font-bold">favorite</span>
+</div>
+<h2 class="text-[#4a1524] dark:text-white text-xl font-bold leading-tight tracking-tight">SurakshaSakhi</h2>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<nav class="hidden md:flex items-center gap-7">
+<a class="text-[#5c4048] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="{{ url_for('index') }}">Home</a>
+<a class="text-[#5c4048] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors border-l border-[#f3e8eb] dark:border-[#3d2a30] pl-7" href="{{ url_for('login') }}">Login</a>
+<a class="text-[#5c4048] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="{{ url_for('sign_up') }}">Sign In</a>
+</nav>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary text-white text-sm font-bold shadow-md hover:bg-primary/90 active:scale-95 transition-all">
+<span class="truncate">Quick Exit</span>
+</button>
+</div>
+</header>
+</div>
+</div>
+<main class="flex-1">
+<div class="px-4 md:px-40 flex justify-center py-12">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase">
+<span class="material-symbols-outlined text-sm">public</span>
+                                    Secure Web Portal
+                                </div>
+<h1 class="text-[#4a1524] dark:text-white text-4xl font-black leading-tight tracking-tight">
+                                    Discreet Support, Directly in Your Browser
+                                </h1>
+<p class="text-[#87646f] dark:text-gray-400 text-lg leading-relaxed">
+                                    Our web interface is designed for those who need a secure, non-traceable way to access help and store sensitive information without leaving a footprint on their physical devices.
+                                </p>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white dark:bg-[#2d181e] border border-[#f3e8eb] dark:border-[#3d2a30] shadow-sm hover:shadow-md transition-shadow">
+<div class="size-12 shrink-0 flex items-center justify-center bg-primary/10 rounded-xl text-primary">
+<span class="material-symbols-outlined text-2xl">visibility_off</span>
+</div>
+<div>
+<h3 class="text-[#4a1524] dark:text-white font-bold text-lg">No chat history stored on phone</h3>
+<p class="text-[#87646f] dark:text-gray-400 text-sm">All communications are browser-based and session-protected. Once you log out, no traces remain on the device.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white dark:bg-[#2d181e] border border-[#f3e8eb] dark:border-[#3d2a30] shadow-sm hover:shadow-md transition-shadow">
+<div class="size-12 shrink-0 flex items-center justify-center bg-primary/10 rounded-xl text-primary">
+<span class="material-symbols-outlined text-2xl">person_off</span>
+</div>
+<div>
+<h3 class="text-[#4a1524] dark:text-white font-bold text-lg">Anonymous incident reporting</h3>
+<p class="text-[#87646f] dark:text-gray-400 text-sm">Report your situation without sharing personally identifiable information until you feel ready and safe.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white dark:bg-[#2d181e] border border-[#f3e8eb] dark:border-[#3d2a30] shadow-sm hover:shadow-md transition-shadow">
+<div class="size-12 shrink-0 flex items-center justify-center bg-primary/10 rounded-xl text-primary">
+<span class="material-symbols-outlined text-2xl">shield</span>
+</div>
+<div>
+<h3 class="text-[#4a1524] dark:text-white font-bold text-lg">Access to your evidence vault</h3>
+<p class="text-[#87646f] dark:text-gray-400 text-sm">A cloud-based, encrypted storage for photos, recordings, and documents that only you can access with your secure key.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 mt-2">
+<button class="flex min-w-[240px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-primary text-white text-lg font-bold shadow-xl hover:bg-primary/90 transition-all transform hover:-translate-y-1 active:scale-95">
+<span>Start Web Chat</span>
+</button>
+<p class="text-[11px] text-[#b39ba3] flex items-center gap-1.5 justify-center md:justify-start px-2">
+<span class="material-symbols-outlined text-xs">lock</span>
+                                    Encrypted connection active
+                                </p>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl -z-10 animate-pulse"></div>
+<div class="bg-gradient-to-br from-[#fff0f5] to-white dark:from-[#2d181e] dark:to-background-dark p-8 rounded-[3rem] border-2 border-white dark:border-[#3d2a30] shadow-2xl relative overflow-hidden">
+<div class="flex flex-col gap-6">
+<div class="w-full h-12 bg-primary/10 rounded-full flex items-center px-4 gap-3">
+<div class="size-3 rounded-full bg-red-400"></div>
+<div class="size-3 rounded-full bg-yellow-400"></div>
+<div class="size-3 rounded-full bg-green-400"></div>
+<div class="flex-1 h-4 bg-white/50 rounded-full mx-2"></div>
+<span class="material-symbols-outlined text-primary text-sm">lock</span>
+</div>
+<div class="space-y-4 py-4">
+<div class="flex gap-3 justify-end">
+<div class="bg-primary text-white p-3 rounded-2xl rounded-tr-none text-sm max-w-[80%]">How can I protect my legal rights?</div>
+</div>
+<div class="flex gap-3">
+<div class="size-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-xs">favorite</span>
+</div>
+<div class="bg-white dark:bg-[#3d2a30] p-3 rounded-2xl rounded-tl-none text-sm shadow-sm border border-[#f3e8eb] dark:border-[#4d3a40] max-w-[80%] text-[#4a1524] dark:text-gray-200">
+                                                I can help you understand the Protection of Women from Domestic Violence Act. Would you like to start there?
+                                            </div>
+</div>
+<div class="flex gap-3 justify-end">
+<div class="bg-primary text-white p-3 rounded-2xl rounded-tr-none text-sm max-w-[80%]">Yes, please. And I need to save some photos safely.</div>
+</div>
+<div class="flex gap-3">
+<div class="size-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-xs">favorite</span>
+</div>
+<div class="bg-white dark:bg-[#3d2a30] p-3 rounded-2xl rounded-tl-none text-sm shadow-sm border border-[#f3e8eb] dark:border-[#4d3a40] max-w-[80%] text-[#4a1524] dark:text-gray-200">
+                                                Understood. Your Evidence Vault is ready. Uploads are encrypted instantly.
+                                            </div>
+</div>
+</div>
+<div class="flex gap-4 pt-4 border-t border-[#f3e8eb] dark:border-[#4d3a40]">
+<div class="flex-1 h-10 bg-[#fceef2] dark:bg-[#2d181e] rounded-full border border-primary/20 flex items-center px-4 text-xs text-[#87646f]">Type message safely...</div>
+<div class="size-10 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined">send</span>
+</div>
+</div>
+</div>
+<div class="absolute -top-4 -right-4 size-16 bg-white dark:bg-[#3d2a30] rounded-2xl shadow-xl flex items-center justify-center text-primary border border-[#fceef2]">
+<span class="material-symbols-outlined text-3xl">fingerprint</span>
+</div>
+<div class="absolute -bottom-4 -left-4 size-20 bg-primary rounded-3xl shadow-xl flex items-center justify-center text-white rotate-12">
+<span class="material-symbols-outlined text-4xl">vpn_key</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="px-4 md:px-40 flex justify-center py-12 bg-white dark:bg-[#1a0d11] border-t border-[#f0e4e8] dark:border-none">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 text-center">
+<div class="flex justify-center mb-6">
+<div class="px-4 py-1 rounded-full bg-[#fceef2] text-primary text-[10px] font-bold tracking-widest uppercase">
+                        Privacy Safeguard Enabled
+                    </div>
+</div>
+<p class="text-sm text-[#87646f] dark:text-gray-400 max-w-lg mx-auto leading-relaxed">
+                    SurakshaSakhi is designed with discretion in mind. To an observer, this platform appears as a general support community. If you need to leave instantly, use the <strong>Quick Exit</strong> button above.
+                </p>
+<div class="mt-8 flex justify-center gap-8 border-t border-[#f0e4e8] pt-8">
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>
